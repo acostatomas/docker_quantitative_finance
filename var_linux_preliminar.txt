@@ -1,0 +1,26 @@
+============================================================
+CASO B: VaR histórico
+============================================================
+Fuente de datos     : real (Yahoo Finance)
+Observaciones       : 499
+Nivel de confianza  : 95%
+------------------------------------------------------------
+Media retorno diario  = Ticker
+AAPL    0.000835
+dtype: float64
+Desvío retorno diario = Ticker
+AAPL    0.018125
+dtype: float64
+------------------------------------------------------------
+VaR (np.percentile, default) = np.float64(-0.027262228257891593)
+VaR (np.percentile, linear)  = np.float64(-0.027262228257891593)
+VaR (pandas .quantile)       = Ticker
+AAPL   -0.027262
+Name: 0.050000000000000044, dtype: float64
+------------------------------------------------------------
+Entorno de ejecución:
+  Python : 3.14.4 (main, Jun 18 2026, 14:25:02) [GCC 15.2.0]
+  Plataforma: Linux-7.0.0-29-generic-x86_64-with-glibc2.43
+  NumPy  : 2.5.2
+  Pandas : 3.0.5
+============================================================
